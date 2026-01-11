@@ -1,466 +1,606 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fatma Mourad</title>
-    <link rel="icon" href="images/logo.png" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="container">
-        <div class="nav-brand">
-          <h2>Fatma</h2>
-        </div>
-        <ul class="nav-menu">
-          <li><a href="#home" class="nav-link">Home</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#experiences" class="nav-link">Experiences</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <button class="theme-toggle" id="themeToggle">
-          <i class="fas fa-moon"></i>
-        </button>
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <div class="hero-text">
-            <h1 class="hero-title">
-              <span class="greeting">Hello, I'm</span>
-              <span class="name">Fatma Mourad</span>
-            </h1>
-            <p class="hero-subtitle">
-              Science Graduate | Trader | UI/UX Designer
-            </p>
-            <p class="hero-description">
-              A passionate professional with a strong foundation in microbiology
-              and biochemistry, complemented by expertise in trading, design. 
-              Continuously learning and applying new skills
-              to create innovative solutions.
-            </p>
-            <div class="hero-buttons">
-              <a href="#contact" class="btn btn-primary">Get In Touch</a>
-              <a href="#projects" class="btn btn-secondary">View Projects</a>
-            </div>
-          </div>
-          <div class="hero-image">
-            <div class="floating-shapes">
-              <div class="shape shape-1"></div>
-              <div class="shape shape-2"></div>
-              <div class="shape shape-3"></div>
-            </div>
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fatma Mourad | Portfolio</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+    rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Dynamic Background -->
+  <div class="background-container">
+    <div class="space-bg"></div>
+    <div class="overlay"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo" data-target="hero">Fatma.</div>
+    <ul class="nav-links">
+      <li><a href="#" data-target="experience" class="nav-item">Experience</a></li>
+      <li><a href="#" data-target="skills" class="nav-item">Skills</a></li>
+      <li><a href="#" data-target="projects" class="nav-item">Projects</a></li>
+      <li><a href="#" data-target="mindset" class="nav-item">Mindset</a></li>
+      <li><a href="#" data-target="contact" class="nav-item">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content Area -->
+  <main class="content-wrapper">
+
+    <!-- Hero Section (Default) -->
+    <section id="hero" class="section active hero-section">
+      <h1 class="hero-name">Fatma Mourad</h1>
+      <p class="hero-caption">Merging Science, Data, and Design.</p>
+      <p class="hero-sub">Science Graduate | UI/UX Designer | Trader</p>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="date">2023 - Present</span>
+          <h3>UI/UX Design Projects</h3>
+          <p>Designed comprehensive user interfaces and experiences using Figma, focusing on research and
+            implementation.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="date">2023 - 2025</span>
+          <h3>Trader</h3>
+          <p>Financial market analysis, risk management strategies, and data-driven decision making.</p>
+        </div>
+
+        <div class="timeline-item">
+          <span class="date">2020 - 2024</span>
+          <h3>B.Sc. in Microbiology & Biochemistry</h3>
+          <p>Graduated with 3.45 GPA. Specialized in scientific research, Biochemistry, and Microbiology.</p>
         </div>
       </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
-      <div class="container">
-        <h2 class="section-title">Skills & Expertise</h2>
-        <div class="skills-grid">
-          <div class="skill-category">
-            <div class="skill-icon">
-              <i class="fas fa-chart-line"></i>
-            </div>
-            <h3>Trading & Business</h3>
-            <ul class="skill-list">
-              <li>Financial Trading (1.5 years)</li>
-              <li>Market Analysis</li>
-              <li>Risk Management</li>
-            </ul>
+    <section id="skills" class="section">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Design</h3>
+          <ul>
+            <li>UX research & problem framing</li>
+            <li>User flows & information architecture</li>
+            <li>Wireframing & UI design</li>
+            <li>Design systems & consistency</li>
+            <li>Prototyping</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Development</h3>
+          <ul>
+            <li>HTML5 & CSS3</li>
+            <li>Python</li>
+            <li>Git/GitHub</li>
+            <li>Understanding responsive behavior & constraints</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Science & Analysis</h3>
+          <ul>
+            <li>Analytical thinking & hypothesis-driven decisions</li>
+            <li>Data interpretation & pattern recognition</li>
+            <li>Research background (biochemistry & microbiology)</li>
+            <li>Structured problem solving</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Languages</h3>
+          <ul>
+            <li>English (Advanced)</li>
+            <li>Arabic (Native)</li>
+            <li>German (Learning)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Categories Section -->
+    <section id="projects" class="section">
+      <h2 class="section-title">Selected Works</h2>
+      <div class="projects-container">
+        <!-- Category Card: UI/UX -->
+        <div class="project-card category-card" onclick="window.switchSection('ui-ux-projects')">
+          <div class="project-info">
+            <h3>UI/UX Design</h3>
+            <p>User-centered digital experiences, from research to high-fidelity prototyping.</p>
+            <span class="tag">Explore Projects <i class="fas fa-arrow-right" style="margin-left: 5px;"></i></span>
           </div>
-          <div class="skill-category">
-            <div class="skill-icon">
-              <i class="fas fa-palette"></i>
-            </div>
-            <h3>Design & Creative</h3>
-            <ul class="skill-list">
-              <li>UI/UX Design</li>
-              <li>Graphic Design</li>
-              <li>Figma</li>
-              <li>Adobe Photoshop CC</li>
-              <li>Adobe Illustrator CC</li>
-              <li>Design Research</li>
-              <li>Product Design</li>
-            </ul>
+        </div>
+        <!-- Category Card: Graphic Design -->
+        <div class="project-card category-card" onclick="window.switchSection('graphic-projects')">
+          <div class="project-info">
+            <h3>Graphic Design</h3>
+            <p>Visual communication assets, branding, and creative problem solving.</p>
+            <span class="tag">View Gallery <i class="fas fa-arrow-right" style="margin-left: 5px;"></i></span>
           </div>
-          <div class="skill-category">
-            <div class="skill-icon">
-              <i class="fas fa-code"></i>
-            </div>
-            <h3>Web Development</h3>
-            <ul class="skill-list">
-              <li>HTML5 & CSS3</li>
-              <li>JavaScript</li>
-              <li>Python</li>
-              <li>Git & GitHub</li>
-              <li>Responsive Design</li>
-              <li>Web Design Principles</li>
-            </ul>
-          </div>
-          <div class="skill-category">
-            <div class="skill-icon">
-              <i class="fas fa-flask"></i>
-            </div>
-            <h3>Science & Research</h3>
-            <ul class="skill-list">
-              <li>Microbiology & Biochemistry</li>
-              <li>Industrial Microbiology</li>
-              <li>Biotechnology & Genetic Engineering</li>
-              <li>Bioinformatics</li>
-              <li>Immunology</li>
-              <li>Neuroscience</li>
-              <li>Research Ethics</li>
-            </ul>
-          </div>
-          <div class="skill-category">
-            <div class="skill-icon">
-              <i class="fas fa-language"></i>
-            </div>
-            <h3>Languages</h3>
-            <ul class="skill-list">
-              <li>English (Advanced)</li>
-              <li>Korean</li>
-              <li>French</li>
-              <li>Arabic (Native)</li>
-              <li>German (Beginner)</li>
-            </ul>
-          </div>
-          <div class="skill-category">
-            <div class="skill-icon">
-              <i class="fas fa-graduation-cap"></i>
-            </div>
-            <h3>Additional Skills</h3>
-            <ul class="skill-list">
-              <li>Scientific Writing</li>
-              <li>Linear Algebra</li>
-              <li>Cognitive Psychology</li>
-              <li>Presentation Skills</li>
-              <li>Technology Transfer</li>
-            </ul>
+        </div>
+        <!-- Category Card: Research -->
+        <div class="project-card category-card">
+          <div class="project-info">
+            <h3>Scientific Research</h3>
+            <p>Data-driven research methodologies applied to complex biological systems.</p>
+            <span class="tag">Microbiology</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Experiences Section -->
-    <section id="experiences" class="experiences">
-      <div class="container">
-        <h2 class="section-title">Education & Experiences</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <h3>Trader</h3>
-              <span class="timeline-date">2024 - present (1.5 years)</span>
-              <p>
-                Worked as a professional trader, developing expertise in
-                financial markets, market analysis, and risk management
-                strategies.
-              </p>
+    <!-- Detailed UI/UX Projects Section -->
+    <section id="ui-ux-projects" class="section">
+      <div class="section-header">
+        <button class="back-btn" onclick="window.switchSection('projects')">
+          <i class="fas fa-arrow-left"></i> Back to Overview
+        </button>
+        <h2 class="section-title" style="margin-bottom: 0;">UI/UX Projects</h2>
+      </div>
+
+      <div class="projects-scroll-container">
+
+        <!-- Tier 1: Full UX Case Studies -->
+        <div class="project-tier">
+          <h3 class="tier-title">Full UX Case Studies</h3>
+          <div class="detailed-projects-grid">
+
+            <!-- Project: Garlic -->
+            <div class="detailed-project-card">
+              <div class="project-thumbnail">
+                <img src="images/garlic-img.png" alt="Garlic Website & App">
+              </div>
+              <div class="card-content">
+                <div class="card-header">
+                  <h3>Garlic Website & App</h3>
+                  <span class="project-type">Case Study</span>
+                </div>
+                <p class="project-desc">Comprehensive UI/UX design for a responsive website and mobile application.</p>
+                <div class="skill-tags">
+                  <span>UI/UX</span>
+                  <span>Figma</span>
+                </div>
+                <div class="action-links">
+                  <a href="https://garlic-lake.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i>
+                    Live Demo</a>
+                  <a href="https://www.behance.net/gallery/241739493/Designing-Garlic-Website-App-Case-Study"
+                    target="_blank"><i class="fab fa-behance"></i> Behance</a>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <h3>Faculty of Science - Graduate</h3>
-              <span class="timeline-date">Graduated 2020 - 2024 | GPA: 3.45/5.00</span>
-              <p>
-                Graduated with a degree in Science, specializing in Microbiology
-                and Biochemistry. Completed extensive coursework in various
-                scientific disciplines.
-              </p>
+
+            <!-- Project: Educational Platform -->
+            <div class="detailed-project-card">
+              <div class="project-thumbnail">
+                <img src="images/educational-learning-platform-img.jpg" alt="Educational Learning Platform">
+              </div>
+              <div class="card-content">
+                <div class="card-header">
+                  <h3>Educational Learning Platform</h3>
+                  <span class="project-type">Figma</span>
+                </div>
+                <p class="project-desc">Responsive platform for managing learning tasks, dashboards, and reports.</p>
+                <div class="skill-tags">
+                  <span>User Flows</span>
+                  <span>Dashboard</span>
+                </div>
+                <div class="action-links">
+                  <a href="https://youtu.be/EwZBVH6NjUc" target="_blank"><i class="fab fa-youtube"></i> Walkthrough</a>
+                  <a href="https://www.behance.net/gallery/175196361/Ui-Design" target="_blank"><i
+                      class="fab fa-behance"></i> Behance</a>
+                </div>
+              </div>
             </div>
+
+            <!-- Project: Doctor At Home -->
+            <div class="detailed-project-card">
+              <div class="project-thumbnail">
+                <img src="images/dah-img.jpg" alt="Doctor At Home App">
+              </div>
+              <div class="card-content">
+                <div class="card-header">
+                  <h3>Doctor At Home</h3>
+                  <span class="project-type">Mobile App</span>
+                </div>
+                <p class="project-desc">Healthcare platform connecting patients with doctors for real-time
+                  consultations.</p>
+                <div class="skill-tags">
+                  <span>Research</span>
+                  <span>Prototyping</span>
+                </div>
+                <div class="action-links">
+                  <a href="https://www.behance.net/gallery/172704195/App_DAH" target="_blank"><i
+                      class="fab fa-behance"></i> Behance</a>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
-        <div class="education-grid">
-          <div class="education-card">
-            <h3><i class="fas fa-university"></i> University Courses</h3>
-            <ul>
-              <li>Industrial Microbiology</li>
-              <li>Nutritional Biochemistry</li>
-              <li>Immunology & Environmental Microbiology</li>
-              <li>Microbial Genetics & Biotechnology</li>
-              <li>Bioinformatics</li>
-              <li>Water Treatment Technology</li>
-              <li>Plant Pathology & Biocontrol</li>
-              <li>Oncology Applied Microbiology</li>
-              <li>Mycology & Identification</li>
-              <li>Genetic Engineering</li>
-            </ul>
-          </div>
-          <div class="education-card">
-            <h3>
-              <i class="fas fa-certificate"></i> Online Courses & Certifications
-            </h3>
-            <ul>
-              <li>Harvard Brain Science Initiative</li>
-              <li>MIT General Biochemistry</li>
-              <li>MIT Neural Computational Course</li>
-              <li>Stanford Scientific Writing</li>
-              <li>Google UX Design Certificate</li>
-              <li>Career Foundry UX Design Process</li>
-              <li>Career Foundry UX Research</li>
-              <li>Flux Academy Web Design</li>
-              <li>Udemy Courses (AI, PS, Design)</li>
-              <li>FreeCodeCamp & Revo Courses</li>
-            </ul>
-          </div>
-          <div class="education-card">
-            <h3><i class="fas fa-briefcase"></i> Professional Development</h3>
-            <ul>
-              <li>National Research Center Internship</li>
-              <li>Pharmacological Research Training</li>
-              <li>Drug Discovery & Development</li>
-              <li>Behavioral Studies Practice</li>
-              <li>Technology Transfer</li>
-              <li>Presentation Skills</li>
-            </ul>
+        <!-- Tier 2: UI & Web Design -->
+        <div class="project-tier">
+          <h3 class="tier-title">UI & Web Design</h3>
+          <div class="detailed-projects-grid">
+
+            <!-- Project: Krypto -->
+            <div class="detailed-project-card compact">
+              <div class="project-thumbnail">
+                <img src="images/krypto-img.jpg" alt="Krypto">
+              </div>
+              <div class="card-content">
+                <div class="card-header">
+                  <h3>Krypto</h3>
+                  <span class="project-type">UI Design</span>
+                </div>
+                <p class="project-desc">Crypto currency dashboard and landing page concept.</p>
+                <div class="skill-tags">
+                  <span>Web Design</span>
+                  <span>Figma</span>
+                </div>
+                <div class="action-links">
+                  <a href="https://www.behance.net/gallery/239480383/Krypto" target="_blank"><i
+                      class="fab fa-behance"></i> Behance</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: Time Management App -->
+            <div class="detailed-project-card compact">
+              <div class="project-thumbnail">
+                <img src="images/time-management-app-img.jpg" alt="Time Management App">
+              </div>
+              <div class="card-content">
+                <div class="card-header">
+                  <h3>Time Management App</h3>
+                  <span class="project-type">Mobile UI</span>
+                </div>
+                <p class="project-desc">Productivity application interface focusing on clarity and ease of use.</p>
+                <div class="skill-tags">
+                  <span>Mobile</span>
+                  <span>Minimal</span>
+                </div>
+                <div class="action-links">
+                  <a href="https://www.behance.net/gallery/239480575/Time-App" target="_blank"><i
+                      class="fab fa-behance"></i> Behance</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: Friskay -->
+            <div class="detailed-project-card compact">
+              <div class="project-thumbnail">
+                <img src="images/friskay.jpg" alt="Friskay">
+              </div>
+              <div class="card-content">
+                <div class="card-header">
+                  <h3>Friskay</h3>
+                  <span class="project-type">Web Design</span>
+                </div>
+                <p class="project-desc">eCommerce fashion website exploration and visual design.</p>
+                <div class="skill-tags">
+                  <span>Fashion</span>
+                  <span>eCommerce</span>
+                </div>
+                <div class="action-links">
+                  <a href="https://www.behance.net/gallery/214701203/Friskay" target="_blank"><i
+                      class="fab fa-behance"></i> Behance</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: Couply -->
+            <div class="detailed-project-card compact">
+              <div class="project-thumbnail">
+                <img src="images/couply-img.jpg" alt="Couply">
+              </div>
+              <div class="card-content">
+                <div class="card-header">
+                  <h3>Couply</h3>
+                  <span class="project-type">App Concept</span>
+                </div>
+                <p class="project-desc">Relationship management and date planning application design.</p>
+                <div class="skill-tags">
+                  <span>Social</span>
+                  <span>Interaction</span>
+                </div>
+                <div class="action-links">
+                  <a href="https://www.behance.net/gallery/239480243/Couply" target="_blank"><i
+                      class="fab fa-behance"></i> Behance</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: Recipes -->
+            <div class="detailed-project-card compact">
+              <div class="project-thumbnail">
+                <img src="images/recipes-img.jpg" alt="Recipes App">
+              </div>
+              <div class="card-content">
+                <div class="card-header">
+                  <h3>Recipes Web</h3>
+                  <span class="project-type">UI Design</span>
+                </div>
+                <p class="project-desc">Culinary inspiration and cooking guide application interface.</p>
+                <div class="skill-tags">
+                  <span>Food</span>
+                  <span>Mobile</span>
+                </div>
+                <div class="action-links">
+                  <a href="https://www.behance.net/gallery/172816069/Website-Page-Design" target="_blank"><i
+                      class="fab fa-behance"></i> Behance</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: Aesthetic Web -->
+            <div class="detailed-project-card compact">
+              <div class="project-thumbnail">
+                <img src="images/Aesthetic web.png" alt="Aesthetic Web">
+              </div>
+              <div class="card-content">
+                <div class="card-header">
+                  <h3>Aesthetic Web</h3>
+                  <span class="project-type">Concept</span>
+                </div>
+                <p class="project-desc">Modern web aesthetics exploration using experimental layout.</p>
+                <div class="skill-tags">
+                  <span>Visuals</span>
+                  <span>Layout</span>
+                </div>
+                <div class="action-links">
+                  <a href="https://www.behance.net/gallery/192593375/Ui-landing-Page" target="_blank"><i
+                      class="fab fa-behance"></i> Behance</a>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
+
+        <!-- Tier 3: Web Development -->
+        <div class="project-tier">
+          <h3 class="tier-title">Web Development</h3>
+          <div class="detailed-projects-grid">
+
+            <!-- Project: Rose -->
+            <div class="detailed-project-card compact">
+              <div class="project-thumbnail">
+                <img src="images/web/Rose.jpg" alt="Rose Creative Agency">
+              </div>
+              <div class="card-content">
+                <div class="card-header">
+                  <h3>Rose Creative Agency</h3>
+                  <span class="project-type">HTML / CSS</span>
+                </div>
+                <p class="project-desc">Minimal and creative agency website designed and developed.</p>
+                <div class="skill-tags">
+                  <span>Development</span>
+                  <span>Responsive</span>
+                </div>
+                <div class="action-links">
+                  <a href="https://fatmaesam.github.io/Rose-Project--One/" target="_blank"><i
+                      class="fas fa-external-link-alt"></i> Live Demo</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: Socially -->
+            <div class="detailed-project-card compact">
+              <div class="project-thumbnail">
+                <img src="images/web/Socially.jpg" alt="Socially">
+              </div>
+              <div class="card-content">
+                <div class="card-header">
+                  <h3>Socially</h3>
+                  <span class="project-type">HTML / CSS / Figma</span>
+                </div>
+                <p class="project-desc">Social media landing page development ensuring pixel-perfect implementation.</p>
+                <div class="skill-tags">
+                  <span>Landing Page</span>
+                  <span>Front-end</span>
+                </div>
+                <div class="action-links">
+                  <a href="https://fatmaesam.github.io/Socially-webpage-Design/" target="_blank"><i
+                      class="fas fa-external-link-alt"></i> Live Demo</a>
+                  <a href="https://www.behance.net/gallery/172984981/Socially_Webpage" target="_blank"><i
+                      class="fab fa-behance"></i> Behance</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: Science -->
+            <div class="detailed-project-card compact">
+              <div class="project-thumbnail">
+                <img src="images/web/Science.jpg" alt="Science Website">
+              </div>
+              <div class="card-content">
+                <div class="card-header">
+                  <h3>Science Portfolio</h3>
+                  <span class="project-type">HTML / CSS</span>
+                </div>
+                <p class="project-desc">Responsive multi-section website with clean code and modern structure.</p>
+                <div class="skill-tags">
+                  <span>Development</span>
+                  <span>Clean Code</span>
+                </div>
+                <div class="action-links">
+                  <a href="https://fatmaesam.github.io/science-project-2/" target="_blank"><i
+                      class="fas fa-external-link-alt"></i> Live Demo</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: Brain -->
+            <div class="detailed-project-card compact">
+              <div class="project-thumbnail">
+                <img src="images/web/Brain.jpg" alt="Brain Project">
+              </div>
+              <div class="card-content">
+                <div class="card-header">
+                  <h3>Brain</h3>
+                  <span class="project-type">HTML / CSS</span>
+                </div>
+                <p class="project-desc">Responsive website developed using HTML and CSS.</p>
+                <div class="skill-tags">
+                  <span>Development</span>
+                  <span>Responsive</span>
+                </div>
+                <div class="action-links">
+                  <a href="https://fatmaesam.github.io/project-3/" target="_blank"><i
+                      class="fas fa-external-link-alt"></i> Live Demo</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-      <div class="container">
-        <h2 class="section-title">Projects & Work</h2>
-        <div class="projects-grid">
-          <div class="project-card" data-project="graphic">
-            <div class="project-icon">
-              <i class="fas fa-paint-brush"></i>
-            </div>
-            <h3>Graphic Design Projects</h3>
-            <p>
-              Created 4 professional designs using Adobe Photoshop CC,
-              showcasing creative problem-solving and visual communication
-              skills.
-            </p>
-            <div class="project-tags">
-              <span class="tag">Photoshop</span>
-              <span class="tag">Design</span>
-            </div>
-          </div>
-          <div class="project-card" data-project="ux">
-            <div class="project-icon">
-              <i class="fas fa-mobile-alt"></i>
-            </div>
-            <h3>UI/UX Design Projects</h3>
-            <p>
-              Completed 5 comprehensive UI/UX projects using Figma, covering the
-              full design process from research to implementation.
-            </p>
-            <div class="project-tags">
-              <span class="tag">Figma</span>
-              <span class="tag">UI/UX</span>
-              <span class="tag">Design Research</span>
-            </div>
-          </div>
-          <div class="project-card" data-project="web">
-            <div class="project-icon">
-              <i class="fas fa-laptop-code"></i>
-            </div>
-            <h3>Web Development Projects</h3>
-            <p>
-              Built responsive web projects using HTML, CSS, and JavaScript,
-              applying modern design principles and best practices.
-            </p>
-            <div class="project-tags">
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
-              <span class="tag">JavaScript</span>
-            </div>
-          </div>
-          <div class="project-card" data-project="graduation">
-            <div class="project-icon">
-              <i class="fas fa-flask"></i>
-            </div>
-            <h3>Graduation Project</h3>
-            <p>
-              Completed a comprehensive graduation project in the field of
-              microbiology and biochemistry, demonstrating research and
-              analytical capabilities.
-            </p>
-            <div class="project-tags">
-              <span class="tag">Research</span>
-              <span class="tag">Microbiology</span>
-            </div>
-          </div>
+    <!-- Graphic Design Gallery Section -->
+    <section id="graphic-projects" class="section">
+      <div class="section-header">
+        <button class="back-btn" onclick="window.switchSection('projects')">
+          <i class="fas fa-arrow-left"></i> Back to Overview
+        </button>
+        <h2 class="section-title" style="margin-bottom: 0;">Graphic Design</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="images/graphic-1.jpg" alt="Graphic Design 1"></div>
+        <div class="gallery-item"><img src="images/graphic-2.jpg" alt="Graphic Design 2"></div>
+        <div class="gallery-item"><img src="images/graphic-3.jpg" alt="Graphic Design 3"></div>
+        <div class="gallery-item"><img src="images/graphic-4.jpg" alt="Graphic Design 4"></div>
+        <div class="gallery-item"><img src="images/graphic-5.jpg" alt="Graphic Design 5"></div>
+      </div>
+    </section>
+
+    <!-- Mindset Section -->
+    <section id="mindset" class="section">
+      <h2 class="section-title">Mindset</h2>
+      <div class="mindset-grid">
+        <!-- Card 1: How I Think -->
+        <div class="mindset-card">
+          <h3 class="mindset-category"><i class="fas fa-brain"></i> How I Think</h3>
+          <ul class="mindset-items">
+            <li>Drawn to depth in people, stories, and ideas.</li>
+            <li>Value structure, meaning, and intentionality.</li>
+            <li>Analyzing patterns and questioning what’s beneath the surface.</li>
+          </ul>
+        </div>
+
+        <!-- Card 2: What I Enjoy -->
+        <div class="mindset-card">
+          <h3 class="mindset-category"><i class="fas fa-film"></i> What I Enjoy</h3>
+          <ul class="mindset-items">
+            <li>Films like <em>A Beautiful Mind</em> that explore human complexity.</li>
+            <li>Alternative & soft rock for reflection and thought.</li>
+            <li>Observing character psychology and behavior.</li>
+          </ul>
+        </div>
+
+        <!-- Card 3: How I Grow -->
+        <div class="mindset-card">
+          <h3 class="mindset-category"><i class="fas fa-dumbbell"></i> How I Grow</h3>
+          <ul class="mindset-items">
+            <li>Using the gym for both physical strength and mental discipline.</li>
+            <li>Finding growth in repetition and consistency.</li>
+            <li>Showing up repeatedly, even on quiet days.</li>
+          </ul>
+        </div>
+
+        <!-- Card 4: How I Show Up -->
+        <div class="mindset-card">
+          <h3 class="mindset-category"><i class="fas fa-user-circle"></i> How I Show Up</h3>
+          <ul class="mindset-items">
+            <li>Calm, thoughtful, and detail-aware.</li>
+            <li>Preferring depth over noise.</li>
+            <li>Choosing clarity and structure over chaos.</li>
+          </ul>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <h2 class="section-title">Get In Touch</h2>
-        <p class="contact-subtitle">
-          I'm always open to discussing new opportunities and collaborations.
-        </p>
-        <div class="contact-content">
-          <div class="contact-info">
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fas fa-envelope"></i>
-              </div>
-              <div>
-                <h3>Email</h3>
-                <p>
-                  <a
-                    href="mailto:fatmaesam263@gmail.com"
-                    style="color: var(--text-secondary); text-decoration: none"
-                    >fatmaesam263@gmail.com</a
-                  >
-                </p>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fas fa-map-marker-alt"></i>
-              </div>
-              <div>
-                <h3>Location</h3>
-                <p>Heliopolis, Cairo, Egypt</p>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fas fa-briefcase"></i>
-              </div>
-              <div>
-                <h3>Availability</h3>
-                <p>Available for work</p>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fas fa-phone"></i>
-              </div>
-              <div>
-                <h3>Phone Number</h3>
-                <p>+201096719651</p>
-              </div>
-            </div>
+    <section id="contact" class="section">
+      <h2 class="section-title">Get in Touch</h2>
+      <div class="contact-container">
+        <!-- Text & Socials -->
+        <div class="contact-info">
+          <p class="contact-lead">I'm currently available for freelance projects and full-time opportunities.</p>
+
+          <div class="email-block">
+            <span class="label">Email me at</span>
+            <a href="mailto:fatmaesam263@gmail.com" class="email-link">fatmaesam263@gmail.com</a>
           </div>
-          <form class="contact-form" id="contactForm">
-            <div class="form-group">
-              <input type="text" id="name" placeholder="Your Name" required />
-            </div>
-            <div class="form-group">
-              <input
-                type="email"
-                id="email"
-                placeholder="Your Email"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <input type="text" id="subject" placeholder="Subject" required />
-            </div>
-            <div class="form-group">
-              <textarea
-                id="message"
-                rows="5"
-                placeholder="Your Message"
-                required
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-          </form>
+
+          <div class="social-links-minimal">
+            <a href="https://www.linkedin.com/in/fatma-mourad-077284219/" target="_blank" aria-label="LinkedIn"><i
+                class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/FatmaEsam" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i>
+              GitHub</a>
+            <a href="https://www.behance.net/fatmamourad263" target="_blank" aria-label="Behance"><i
+                class="fab fa-behance"></i> Behance</a>
+          </div>
         </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell me about your project..."
+              required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+        </form>
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-text">
-            <p>&copy; 2025 Fatma Mourad. All rights reserved.</p>
-          </div>
-          <div class="footer-social">
-            <a
-              href="https://www.linkedin.com/in/fatma-mourad-077284219/"
-              class="social-link"
-              aria-label="LinkedIn"
-              title="linkedin"
-              target="_blank"
-            >
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a
-              href="https://github.com/FatmaEsam"
-              class="social-link"
-              aria-label="GitHub"
-              title="github"
-              target="_blank"
-            >
-              <i class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://www.behance.net/fatmamourad263"
-              class="social-link"
-              aria-label="Behance"
-              title="behance"
-              target="_blank"
-            >
-              <i class="fab fa-behance"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
 
-    <!-- Project Modal -->
-    <div class="project-modal" id="projectModal">
-      <div class="modal-overlay"></div>
-      <div class="modal-content">
-        <button class="modal-close" id="modalClose">
-          <i class="fas fa-times"></i>
-        </button>
-        <h2 class="modal-title" id="modalTitle"></h2>
-        <div class="modal-images-grid" id="modalImagesGrid"></div>
-      </div>
+    <!-- Audio Control -->
+    <div class="audio-control">
+      <button id="music-toggle" aria-label="Toggle background music">
+        <i class="fas fa-volume-mute"></i>
+      </button>
+      <audio id="bg-music" loop>
+        <source src="audio/Beach House - On The Sea.mp3" type="audio/mp3">
+      </audio>
     </div>
 
-    <!-- Image Lightbox -->
-    <div class="lightbox" id="lightbox">
-      <button class="lightbox-close" id="lightboxClose">
-        <i class="fas fa-times"></i>
-      </button>
-      <button class="lightbox-prev" id="lightboxPrev">
-        <i class="fas fa-chevron-left"></i>
-      </button>
-      <button class="lightbox-next" id="lightboxNext">
-        <i class="fas fa-chevron-right"></i>
-      </button>
-      <div class="lightbox-content">
-        <img src="" alt="" id="lightboxImage">
-      </div>
-    </div>
+  </main>
 
-    <script src="main.js"></script>
-  </body>
+  <script src="main.js"></script>
+</body>
+
 </html>
